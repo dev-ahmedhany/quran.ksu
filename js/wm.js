@@ -3,8 +3,8 @@ SG = (typeof SG == "undefined")?{} : SG;
 _platform_ = "wos";
 
 url_interface = 'interface.php?ui=mobile';
-base_mp3url = 'https://quran.ksu.edu.sa/ayat/mp3';
-res_url = 'https://quran.ksu.edu.sa/ayat/resources';
+base_mp3url = './ayat/mp3';
+res_url = './ayat/resources';
 res_ext = 'ayt';
 masahef = {
 	"hafs"    : {url:"png_big/" , folder:"hafs" ,  ext:"png" , page_key:"Page" , whr:1.474 , height:690 , factor:0.2},
@@ -331,7 +331,7 @@ SG.hideAB = function(){
 SG.boot = function(cb){
 
 	if(false){// && !top || !top.location || !self || !self.location || top!=self || top.location!=self.location || (top.location.pathname.indexOf("m.php") == -1 && top.location.pathname.indexOf("mobile.php") == -1 && top.location.pathname.indexOf("m.dev.php") == -1 && top.location.pathname.indexOf("m.dev2.php") == -1)){
-		$('body').html('<div style="text-align:center;font-weight:bold;padding-top:40px;"><a href="https://quran.ksu.edu.sa/" target="_blank">موقع المصحف الإلكتروني</a><br><br><a href="https://quran.ksu.edu.sa/" target="_blank">Electronic Mosshaf</a></div>');
+		$('body').html('<div style="text-align:center;font-weight:bold;padding-top:40px;"><a href="./" target="_blank">موقع المصحف الإلكتروني</a><br><br><a href="./" target="_blank">Electronic Mosshaf</a></div>');
 		return;
 	}
     SG.Initer.currAya   = getHash('aya') || getKey('curr_aya') || null;
